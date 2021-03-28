@@ -1,26 +1,22 @@
+import React from 'react';
+import {useSelector, useDispatch} from 'react-redux';
 import './App.css';
+import Board from './Board.js'
+import {select} from  './actions/board/boardSlice.js';
 
 function App() {
-  const boxes = new Array(15);
-  for (let i = 0; i < boxes.length; i++) boxes[i] = i + 1;
-  let arr = Array.from(Array(15), () => new Array(5));
+	const dispatch = useDispatch();
+	const board = useSelector(state => state.board);
+	
+	let i = 1
+	return (
+		<>
+		<h1>App Connected</h1>
+		<button onClick={() => dispatch(select(i))}>Select 15</button>
+		<Board />
+		</>
 
-  return (
-	<>
-  	<h1>Interjection</h1>
-	<table id="board">
-	<tr>
-	{arr.map( (element, index) => {
-	</tr>
-	</table>
-	</>
-  );
-
+	)
 }
 
 export default App;
-//	<tr id="B-row"><b>B</b>{boxes.map( (i, index) => {return <td>{i}</td>})}</tr>
-//	<tr id="I-row"><b>I</b>{boxes.map( (i, index) => {return <td>{i+15}</td>})}</tr>
-//	<tr id="N-row"><b>N</b>{boxes.map( (i, index) => {return <td>{i+30}</td>})}</tr>
-//	<tr id="G-row"><b>G</b>{boxes.map( (i, index) => {return <td>{i+45}</td>})}</tr>
-//	<tr id="O-row"><b>O</b>{boxes.map( (i, index) => {return <td>{i+60}</td>})}</tr>
