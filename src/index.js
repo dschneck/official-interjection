@@ -11,10 +11,11 @@ import { createStore } from 'redux';
 import rootReducer from './reducers/index.js';
 
 const store = createStore(rootReducer);
+let numCards = 3;
 
 ReactDOM.render(
 	<Provider store={store}>
-		<App />
+		<App numCards={numCards}/>
 	</Provider>
 	, document.getElementById('root')
 );
