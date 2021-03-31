@@ -7,8 +7,8 @@
 	background-color: #ff005c;
 	/*color: #fff600;*/
 	color: black;
-	font-size: x-large;
-	border: 10px solid #fff600;
+	font-size: xx-large;
+	/*border: 10px solid #fff600;*/
 	padding-right: 10px;
 }
 
@@ -16,9 +16,11 @@
 	border: 2px solid #ff005c;
 	border-collapse: collapse;
 	background-color: #26001B;
+	color: #ffffcc;
 	font-family: "Lucida Console", "Courier New", monospace;
 	height:100%;
 	text-align: center;
+	grid-area: board;
 }
 
 #board th, #board td {

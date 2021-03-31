@@ -1,0 +1,9 @@
+#card-container {
+	grid-area: card-container;
+	border: 1px solid black;
+
+}
+
+.card {
+
+}

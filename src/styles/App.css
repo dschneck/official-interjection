@@ -1,0 +1,25 @@
+body {
+	background-color: #565656;
+	color: black;
+
+}
+
+#app {
+	height: 100vh;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 12px;
+	display: grid;
+	
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	grid-template-areas:
+			"last-called board board board"
+			"status status status status"
+			"card-containers card-containers card-containers card-containers"
+			"card-containers card-containers card-containers card-containers"
+
+}
+
