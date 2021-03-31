@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card.js';
 
-class Card_Container extends React.Component {
+class CardContainer extends React.Component {
 	constructor(props) {
 		super(props);
 		this.numCards = props.numCards;
@@ -20,4 +20,4 @@ class Card_Container extends React.Component {
 	}
 }
 
-export default Card_Container;
+export default CardContainer;

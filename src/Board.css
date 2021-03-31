@@ -1,0 +1,58 @@
+.selected {
+	background-color: teal;
+}
+
+
+.letter {
+	background-color: #ff005c;
+	/*color: #fff600;*/
+	color: black;
+	font-size: x-large;
+	border: 10px solid #fff600;
+	padding-right: 10px;
+}
+
+#board {
+	border: 2px solid #ff005c;
+	border-collapse: collapse;
+	background-color: #26001B;
+	font-family: "Lucida Console", "Courier New", monospace;
+	height:100%;
+	text-align: center;
+}
+
+#board th, #board td {
+  border: 1px solid #fff600;
+  padding: 5px 5px 5px 5px;
+  font-size: 20px;
+}
+	
+/*
+table, td, tr{
+	border: 1px solid #fff600;
+	border-collapse: collapse;
+}
+*/
+
+/*
+These may be useful later
+#B-row {
+
+}
+
+#I-row {
+
+}
+
+#N-row {
+
+}
+
+#G-row {
+
+}
+
+#O-row {
+
+}
+*/
