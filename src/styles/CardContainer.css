@@ -1,9 +1,37 @@
-#card-container {
-	grid-area: card-container;
-	border: 1px solid black;
+.cardContainer {
+	grid-area: cardContainer;
+	background-color: blue;
+	/*flex-direction: row;*/
+	/*flex-wrap: wrap;*/
+	justify-content: center;
+	align-items: center;
+
+	display: flex;
 
 }
 
 .card {
+	color: magenta;
+	border: 2px solid teal;
+	position: relative;
+	margin: 0;
+	flex: 1;
+
+}
+
+.card h1 {
+	padding-top: 8px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.card  tr, .card  th {
+	color: teal;
+	margin: 0;
+    /*padding: 0; */
+	/*position: absolute;*/
+	top: 55%;
+	left: 50%;
+	/*transform: translate(-50%, -50%);*/
 
 }

@@ -11,15 +11,16 @@ body {
 	font-size: 12px;
 	display: grid;
 	
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, .75fr) .5fr repeat(2, 1.25fr);
 	grid-column-gap: 5px;
 	grid-row-gap: 5px;
 	grid-template-areas:
 			"last-called board board board"
+			"last-called board board board"
 			"status status status status"
-			"card-containers card-containers card-containers card-containers"
-			"card-containers card-containers card-containers card-containers"
+			"cardContainer cardContainer cardContainer cardContainer"
+			"cardContainer cardContainer cardContainer cardContainer"
 
 }
 

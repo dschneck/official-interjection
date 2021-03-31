@@ -12,7 +12,7 @@ class CardContainer extends React.Component {
 	render() {
 		const cards = new Array(this.numCards).fill(0);
 		return (
-			<div className="card-container">
+			<div className="cardContainer">
 			{cards.map(() => {
 				return <Card />
 			})}
