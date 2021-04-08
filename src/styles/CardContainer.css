@@ -1,46 +1,3 @@
-/*
-.cardContainer {
-	grid-area: cardContainer;
-	background-color: blue;
-	justify-content: flex-start;
-	align-items: center;
-
-	display: flex;
-
-}
-
-.card {
-	color: magenta;
-	border: 2px solid teal;
-	position: relative;
-	width: 20%;
-	flex: 1;
-
-}
-
-.cardTitle {
-	text-align: center;
-	padding: 50px 10px;
-	background: #fff;
-	border: 1px solid black;
-	margin-bottom: 50px;
-}
-
-.cardNumbers {
-	color: teal;
-	position: absolute;
-	padding: 30px 20px;
-	top: 55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.cardNumbers tr, .cardNumbers td {
-	border: .5px solid black;
-	font-size: 18px;
-	padding: 6px;
-}
-*/
 
 .cardContainer {
 	grid-area: cardContainer;
@@ -55,11 +12,21 @@
 	position: relative;
 	margin: 12px 0 0 12px;
 	border: 1px solid black;
+	background: #F4EBD0;
 
 }
 
 .cardTitle {
-	background: teal;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.cardTitle h1 {
+	margin: 0;
+	font-size: 30px;
+	flex: 1;
+	padding: 0;
 
 }
 
@@ -67,10 +34,28 @@
 	margin: auto;
 	width: 100%;
 	height: 100%;
-	padding: 10px;
+	padding-top: 0;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .cardNumbers tr, .cardNumbers td {
+	background: #e5e5e5;
 	border: .5px solid black;
+	border-radius: 1.5px;
 	font-size: 25px;
+	padding: 10px;
+
+}
+
+#B {color: blue;}
+#I {color: red;}
+#N {color: blue;}
+#G {color: green;}
+#O {color: gold;}
+
+#free {
+	font-size: 10px;
+	color: green;
 
 }

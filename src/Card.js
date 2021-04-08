@@ -20,13 +20,23 @@ class Card extends React.Component {
 	render() {
 		return (
 			<div className="card">
-				<h1 className="cardTitle">Card</h1>
+				<div className="cardTitle">
+						<h1 id="B">B</h1>
+						<h1 id="I">I</h1>
+						<h1 id="N">N</h1>
+						<h1 id="G">G</h1>
+						<h1 id="O">O</h1>
+				</div>
 				<div className="cardNumbers">
 				<table>
 					<tbody>
 					<tr>{this.spwn(5, 1*100)}</tr>
 					<tr>{this.spwn(5, 5*100)}</tr>
-					<tr>{this.spwn(5, 10*100)}</tr>
+					<tr>
+						{this.spwn(2, 10 *100)}
+						<td id="free">free</td>
+						{this.spwn(2, 10 *100)}
+					</tr>
 					<tr>{this.spwn(5, 15*100)}</tr>
 					<tr>{this.spwn(5, 20*100)}</tr>
 				</tbody>
