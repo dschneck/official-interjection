@@ -1,9 +1,8 @@
+/*
 .cardContainer {
 	grid-area: cardContainer;
 	background-color: blue;
-	/*flex-direction: row;*/
-	/*flex-wrap: wrap;*/
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 
 	display: flex;
@@ -14,23 +13,23 @@
 	color: magenta;
 	border: 2px solid teal;
 	position: relative;
-	margin: 0;
+	width: 20%;
 	flex: 1;
 
 }
 
 .cardTitle {
-	padding-top: 8px;
-	margin-top: 0px;
 	text-align: center;
+	padding: 50px 10px;
+	background: #fff;
+	border: 1px solid black;
+	margin-bottom: 50px;
 }
 
 .cardNumbers {
 	color: teal;
-	border: 1px solid black;
-	margin: 0;
-    padding: 0; 
 	position: absolute;
+	padding: 30px 20px;
 	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -40,4 +39,38 @@
 	border: .5px solid black;
 	font-size: 18px;
 	padding: 6px;
+}
+*/
+
+.cardContainer {
+	grid-area: cardContainer;
+	display: inline-flex;
+	align-items: top;
+	background: grey;
+
+}
+
+.card {
+	flex: 1;
+	position: relative;
+	margin: 12px 0 0 12px;
+	border: 1px solid black;
+
+}
+
+.cardTitle {
+	background: teal;
+
+}
+
+.card table {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+.cardNumbers tr, .cardNumbers td {
+	border: .5px solid black;
+	font-size: 25px;
+
 }
