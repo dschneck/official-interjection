@@ -14,7 +14,7 @@ class CardContainer extends React.Component {
 		return (
 			<div className="cardContainer">
 			{cards.map(() => {
-				return <Card />
+				return <Card card_id={2} />
 			})}
 			</div>
 		);

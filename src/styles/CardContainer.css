@@ -19,19 +19,25 @@
 
 }
 
-.card h1 {
+.cardTitle {
 	padding-top: 8px;
 	margin-top: 0px;
 	text-align: center;
 }
 
-.card  tr, .card  th {
+.cardNumbers {
 	color: teal;
+	border: 1px solid black;
 	margin: 0;
-    /*padding: 0; */
-	/*position: absolute;*/
+    padding: 0; 
+	position: absolute;
 	top: 55%;
 	left: 50%;
-	/*transform: translate(-50%, -50%);*/
+	transform: translate(-50%, -50%);
+}
 
+.cardNumbers tr, .cardNumbers td {
+	border: .5px solid black;
+	font-size: 18px;
+	padding: 6px;
 }

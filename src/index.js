@@ -11,7 +11,7 @@ import { createStore } from 'redux';
 import rootReducer from './reducers/index.js';
 
 const store = createStore(rootReducer);
-let numCards = 3;
+let numCards = 4;
 
 ReactDOM.render(
 	<Provider store={store}>

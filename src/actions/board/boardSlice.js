@@ -4,3 +4,9 @@ export const select = (index) => {
 		payload: index
 	}
 }
+
+export const reset = () => {
+	return {
+		type: 'board/RESET'
+	}
+}

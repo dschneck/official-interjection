@@ -7,6 +7,8 @@ const boardReducer = (state, action) => {
 		//	console.log("THE INDEX IS " + action.payload);
 		//	console.log("THE RET IS NOW"+ ret);
 			return ret;
+		case 'board/RESET':
+			return Array(75).fill(false);
 		default:
 			return Array(75).fill(false);
 	}
