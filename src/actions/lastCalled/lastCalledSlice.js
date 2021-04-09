@@ -7,8 +7,9 @@ export const enqueue = (boardNumber) => {
 
 }
 
-export const dequeue = () => {
+export const dequeue = (x) => {
 	return {
-		type: 'lastCalled/DEQUEUE'
+		type: 'lastCalled/DEQUEUE',
+		payload: x
 	}
 }

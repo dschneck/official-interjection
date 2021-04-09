@@ -7,9 +7,11 @@ const rootReducer = combineReducers({
 	board: boardReducer,
 	card: cardReducer,
 	lastCalled: lastCalledReducer
-	
 });
 
 export default rootReducer;
-
+	/*board: boardReducer,
+	card: cardReducer,
+	lastCalled: lastCalledReducer
+*/
 

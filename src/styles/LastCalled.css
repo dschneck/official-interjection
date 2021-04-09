@@ -1,3 +1,9 @@
+ #selected-ball {
+ 	background: blue;
+	color: white;
+
+ }
+
  #last-called {
  	display: flex;
 	background: black;
@@ -18,7 +24,7 @@
 .ball {
 	padding: 6px;
 	margin: auto;
-	background: white;
+	background: gold;
 	color: black;
 	border: 1px solid black;
 	border-radius: 50%;

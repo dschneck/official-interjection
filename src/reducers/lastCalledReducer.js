@@ -1,11 +1,27 @@
-const lastCalledReducer = (state, action) =>  {
+const lastCalledReducer = (state = {lastCalled: Array(5).fill(null)}, action) =>  {
 	switch (action.type)  {
 		case 'lastCalled/ENQUEUE':
-			return Array.from(state.push(action.payload));
+			let ret = Array.from(state.lastCalled);
+			ret.push(action.payload);
+			
+			if (ret.length > 5) {
+				ret = Array.from(ret.slice(1));
+			}
+			state = {
+				lastCalled: ret
+			}
+			return state;
 		case 'lastCalled/DEQUEUE':
-			return Array.from(state.slice(1));
+			let retx = Array.from(state.lastCalled.slice(action.payload));	
+			state.lastCalled = retx;
+
+			state = {
+				lastCalled: retx
+			}
+
+			return state;
 		default:
-			return Array(5).fill(null);
+			return state;
 
 	}
 

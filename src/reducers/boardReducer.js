@@ -1,13 +1,19 @@
-const boardReducer = (state, action) => {
+const boardReducer = (state = {board: Array(75).fill(false)}, action) => {
 	switch (action.type) {
 		case 'board/SELECT':
-			const ret = Array.from(state);
-			ret[action.payload-1] = true;
-			return ret;
+			let cpy = Array.from(state.board);
+			cpy[action.payload-1] = true;
+			state = {
+				board: cpy
+			}
+			return state;
 		case 'board/RESET':
-			return Array(75).fill(false);
+			state =  {
+				board: Array(75).fill(false)
+			}
+			return state;
 		default:
-			return Array(75).fill(false);
+			return state;
 	}
 };
 

@@ -5,7 +5,7 @@ export const select = (index) => {
 	}
 }
 
-export const reset = () => {
+export const reset_board = () => {
 	return {
 		type: 'board/RESET'
 	}
