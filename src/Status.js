@@ -1,6 +1,7 @@
 import './styles/Status.css';
 import {useDispatch} from 'react-redux';
 import {select, reset} from './actions/board/boardSlice.js';
+import {enqueue, dequeue} from './actions/lastCalled/lastCalledSlice.js';
 
 function Status(props) {
 	const dispatch = useDispatch();
@@ -11,6 +12,7 @@ function Status(props) {
 				<button onClick={() => {
 					let random = Math.floor((Math.random()*75) +1);
 					dispatch(select(random));
+					dispatch(enqueue(random));
 				
 				}}>
 					Select Random
