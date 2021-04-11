@@ -22,6 +22,7 @@
 }
 
 .ball {
+	font-size: 20px;
 	padding: 6px;
 	margin: auto;
 	background: #dbb000;

@@ -16,7 +16,7 @@
 	border-collapse: collapse;
 	background: #2b2a26;
 	color: #ffffcc;
-	font-family: "Lucida Console", "Courier New", monospace;
+/*	font-family: "Lucida Console", "Courier New", monospace;*/
 	height:100%;
 	text-align: center;
 	grid-area: board;
