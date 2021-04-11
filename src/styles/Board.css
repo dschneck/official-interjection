@@ -4,18 +4,15 @@
 
 
 .letter {
-	background-color: #ff005c;
-	/*color: #fff600;*/
-	color: black;
+	color: white;
 	font-size: xx-large;
 	/*border: 10px solid #fff600;*/
 	padding-right: 10px;
 }
 
 #board {
-	border: 2px solid #ff005c;
 	border-collapse: collapse;
-	background-color: #26001B;
+	background: #2b2a26;
 	color: #ffffcc;
 	font-family: "Lucida Console", "Courier New", monospace;
 	height:100%;
@@ -24,9 +21,26 @@
 }
 
 #board th, #board td {
-  border: 1px solid #fff600;
-  padding: 5px 5px 5px 5px;
+  border: 1px solid #1a232f;
+  border-radius: 10px;
+  padding: 10px;
   font-size: 20px;
+}
+
+#B-box {
+	background: #0763d7;
+}
+#I-box {
+	background: #e41e1c ;
+}
+#N-box {
+	background: #bacbd3 ;
+}
+#G-box {
+	background: #37af01 ;
+}
+#O-box {
+	background: #d2c424 ;
 }
 	
 /*

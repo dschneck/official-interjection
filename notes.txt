@@ -1,3 +1,25 @@
-Board notes:
+Colors from Kevins demo:
+	App:
+		Background - #1a232f
+	Board:
+		B - #0763d7
+		I - #e41e1c
+		N - #bacbd3
+		G - #37af01
+		O - #d2c424
+
+		Background - #313232 or #2b2a26
+		Text color - #586265
+		Previously selected text - #c7a521
+		Currently selected - #387a8c
+
+	Last Called:
+		Normal ball: #d0ad00 or #dbb000
+		To be dequeue: #00b7db
+
+	Cards:
+		Background - #d7d6ca
+		Daub - #e38000
+
 
 

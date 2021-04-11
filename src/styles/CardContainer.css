@@ -3,7 +3,6 @@
 	grid-area: cardContainer;
 	display: inline-flex;
 	align-items: top;
-	background: grey;
 
 }
 
@@ -12,7 +11,7 @@
 	position: relative;
 	margin: 12px 0 0 12px;
 	border: 1px solid black;
-	background: #F4EBD0;
+	background: #d7d6ca;
 
 }
 
@@ -48,11 +47,11 @@
 
 }
 
-#B {color: blue;}
-#I {color: red;}
-#N {color: blue;}
-#G {color: green;}
-#O {color: gold;}
+#B {color: #0763d7;}
+#I {color: #e41e1c;}
+#N {color: #bacbd3;}
+#G {color: #37af01;}
+#O {color: #d2c424;}
 
 #free {
 	font-size: 10px;
