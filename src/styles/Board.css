@@ -23,8 +23,8 @@
 }
 
 #board th, #board td {
-  border: 1px solid #1a232f;
-  border-radius: 10px;
+  border: 4px solid #1a232f;
+  border-radius: 12px;
   padding: 10px;
   font-size: 20px;
 }

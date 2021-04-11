@@ -12,8 +12,11 @@ const lastCalledReducer = (state = {lastCalled: Array(5).fill(null)}, action) =>
 			}
 			return state;
 		case 'lastCalled/DEQUEUE':
-			let retx = Array.from(state.lastCalled.slice(action.payload));	
-			state.lastCalled = retx;
+			let retx; 
+
+			if (action.payload === 5) retx =  Array(5).fill(null);
+			else retx = Array.from(state.lastCalled.slice(action.payload));	
+
 
 			state = {
 				lastCalled: retx
