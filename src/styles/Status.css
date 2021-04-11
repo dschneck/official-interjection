@@ -2,5 +2,27 @@
 	background-color: #d7d6ca;
 	color: black;
 	grid-area: status;
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
+
+#called-msg {
+	order: 1;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	height: 80%;
+
+}
+
+.away {
+	order: 2;
+	flex-grow: 4;
+	padding: 5px;
+	margin: 5px;
+	border-left: 3px solid grey;
+	text-align: center;
+	height: 75%;
 
 }

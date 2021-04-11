@@ -54,7 +54,9 @@
 #O {color: #d2c424;}
 
 #free {
-	font-size: 10px;
-	color: green;
+	font-size: 20px;
+	color: black;
+	height: 10%;
+	width: 10%;
 
 }

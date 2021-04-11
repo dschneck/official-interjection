@@ -1,5 +1,6 @@
 .selected {
 	background-color: teal;
+  	border: 1px solid #1a232f;
 }
 
 
@@ -8,6 +9,7 @@
 	font-size: xx-large;
 	/*border: 10px solid #fff600;*/
 	padding-right: 10px;
+  	border: 1px solid #1a232f;
 }
 
 #board {

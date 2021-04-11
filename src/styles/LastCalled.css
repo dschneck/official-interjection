@@ -1,12 +1,12 @@
  #selected-ball {
- 	background: blue;
-	color: white;
+ 	background: #00b7db;
+	color: black;
 
  }
 
  #last-called {
  	display: flex;
-	background: black;
+	background: #1a232f;
 	grid-area: last-called; 
 	
  }
@@ -24,7 +24,7 @@
 .ball {
 	padding: 6px;
 	margin: auto;
-	background: gold;
+	background: #dbb000;
 	color: black;
 	border: 1px solid black;
 	border-radius: 50%;

@@ -5,22 +5,14 @@ import {enqueue, dequeue} from './actions/lastCalled/lastCalledSlice.js';
 
 function Status(props) {
 	const dispatch = useDispatch();
+	let lastCalled = 1;
 	return (
 
 		<div id="status">
-				<h2>Status</h2>
-				<button onClick={() => {
-					let random = Math.floor((Math.random()*75) +1);
-					dispatch(select(random));
-					dispatch(enqueue(random));
-				
-				}}>
-					Select Random
-				</button>
-				<button onClick={() => {
-					dispatch(reset_board());
-					dispatch(dequeue(5));
-				}}>Reset</button>
+				<h1 id="called-msg">Number {lastCalled} called - found on x cards</h1>
+				<h1 className="away">1 AWAY: {0}</h1>
+				<h1 className="away">2 AWAY: {0}</h1>
+				<h1 className="away">3 AWAY: {0}</h1>
 		</div>
 	);
 }

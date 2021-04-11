@@ -1,7 +1,13 @@
 body {
 	background: #1a232f;
 	color: black;
+}
 
+button {
+	padding: 0px;
+	margin: 0px;
+	width: 20%;
+	height: 20%;
 
 }
 
