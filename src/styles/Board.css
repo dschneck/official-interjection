@@ -1,6 +1,14 @@
+@keyframes fade_in_selection {
+	from {background: var(--main-bg-color);}
+	to {background: teal;}
+
+}
+
 .selected {
 	background-color: teal;
   	border: 1px solid #1a232f;
+	animation-name: fade_in_selection;
+	animation-duration: 2s;
 }
 
 
@@ -9,7 +17,8 @@
 	font-size: xx-large;
 	/*border: 10px solid #fff600;*/
 	padding-right: 10px;
-  	border: 1px solid #1a232f;
+  	border: 1px solid var(--main-bg-color);
+
 }
 
 #board {
