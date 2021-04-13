@@ -47,11 +47,11 @@
 
 }
 
-#B {color: #0763d7;}
-#I {color: #e41e1c;}
-#N {color: #bacbd3;}
-#G {color: #37af01;}
-#O {color: #d2c424;}
+#B {color: var(--B-color);}
+#I {color: var(--I-color);}
+#N {color: var(--N-color);}
+#G {color: var(--G-color);}
+#O {color: var(--O-color);}
 
 #free {
 	font-size: 20px;

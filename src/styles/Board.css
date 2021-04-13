@@ -23,26 +23,26 @@
 }
 
 #board th, #board td {
-  border: 4px solid #1a232f;
+  border: 4px solid var(--main-bg-color);
   border-radius: 12px;
   padding: 10px;
   font-size: 20px;
 }
 
 #B-box {
-	background: #0763d7;
+	background: var(--B-color);
 }
 #I-box {
-	background: #e41e1c ;
+	background: var(--I-color);
 }
 #N-box {
-	background: #bacbd3 ;
+	background: var(--N-color);
 }
 #G-box {
-	background: #37af01 ;
+	background: var(--G-color);
 }
 #O-box {
-	background: #d2c424 ;
+	background: var(--O-color);
 }
 	
 /*

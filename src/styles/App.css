@@ -1,5 +1,15 @@
+:root {
+	--main-bg-color: #1a232f;
+	--B-color: #0763d7;
+	--I-color: #e41e1c;
+	--N-color: #bacbd3;
+	--G-color: #37af01;
+	--O-color: #d2c424;
+
+}
+
 body {
-	background: #1a232f;
+	background: var(--main-bg-color);
 	color: black;
 }
 
