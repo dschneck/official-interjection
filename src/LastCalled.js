@@ -12,8 +12,8 @@ function LastCalled(props) {
 			<div id="last-called">
 				<ul>
 					 {queue.lastCalled.map( (element, index) => {
-						if (index === 0) return <li key={`${index}:key` } id="selected-ball" className="ball">{element}</li>
-						else return <li key={`${index}:last_called_key` } className="ball">{element}</li>
+						if (index === 0) return <li key={element} id="selected-ball" className="ball">{element}</li>
+						else return <li key={element} className="ball">{element}</li>
 					})}
 					
 				</ul>

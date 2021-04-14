@@ -1,6 +1,38 @@
+ @keyframes move_ball_down_special {
+ 	0% {transform: translateY(-200px);}
+	100% {transform: translateY(0px);}
+
+ }
+
+ @keyframes move_ball_down {
+ 	0% {transform: translateY(-28px);}
+	100% {transform: translateY(0px);}
+
+ }
+
+ @keyframes move_ball_left {
+ 	0% {transform: translateX(0px);}
+	100% {transform: translateX(-100px);}
+
+ }
+
+ @keyframes select_ball {
+ 	0% {background: #dbb000;}
+	100% {background: #00b7db}
+
+ }
+
+ @keyframes move_numbers {
+ 	from {padding-bottom: 5px;}
+	to {padding-bottom: 0px;}
+
+ }
+
+
  #selected-ball {
  	background: #00b7db;
 	color: black;
+	animation: select_ball 1s;
 
  }
 
@@ -37,6 +69,29 @@
 	/*line-height: 20px; */
 
 }
+
+.ball:nth-child(5) {
+	animation: move_ball_down_special 1.5s;
+ 
+}
+.ball:nth-child(4) {
+	animation: move_ball_down 1s;
+}
+.ball:nth-child(3) {
+	animation: move_ball_down 1s;
+}
+ 
+ 
+
+.ball:nth-child(2) {
+	animation: move_ball_down 1s;
+}
+ 
+.ball:nth-child(1) {
+	animation: move_ball_down 1s;
+}
+ 
+ 
 
 #last-called img {
 	float: right;
