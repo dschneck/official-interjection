@@ -10,3 +10,10 @@ export const reset_board = () => {
 		type: 'board/RESET'
 	}
 }
+
+export const increment_balls_called_count = () => {
+	return {
+		type: 'board/INCREMENT'
+	}
+
+}

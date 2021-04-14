@@ -4,6 +4,16 @@ import {useSelector, useDispatch} from 'react-redux';
 // need  to import the actions that board would take
 
 
+export function* incNumBallsCalled() {
+	let i = 1;
+
+	while (true)  {
+		if (i === 76) i = 1;
+		yield i;
+		i++;
+	}
+}
+
 function Board(props) {
 	const dispatch = useDispatch();
 	const thing = useSelector(state => state.board);
@@ -13,7 +23,13 @@ function Board(props) {
 			<tbody>
 			<tr id="B-row"><td id="B-box" className="letter">B</td>
 				{thing.board.slice(0, 15).map( (element, index) => {
-					if (element) return <td key={index} className="selected">{index+1}</td> 
+					if (element) {
+						if (props.numBall === 75)
+							return <td key={index} id="final-letter" className="selected">{index+1}</td> 
+						else
+							return <td key={index} className="selected">{index+1}</td> 
+					}
+
 					return <td>{index+1}</td>
 				})}
 			</tr>

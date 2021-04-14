@@ -6,6 +6,13 @@
 	--G-color: #37af01;
 	--O-color: #d2c424;
 
+	--level-1-bdr: red;
+	--level-2-bdr: blue;
+	--level-3-bdr: yellow;
+
+	--not-called-color: #2b2a26;
+	--called-color: teal;
+	--final-called-color: aquamarine;
 }
 
 body {

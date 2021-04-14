@@ -14,16 +14,11 @@ function App(props) {
 	const dispatch = useDispatch();
 	const board = useSelector(state => state.board);
 	
-//	let min = Math.ceil(1);
-//	let max = Math.floor(75);
-	
-//	let i = Math.floor(Math.random() * (max - min) + min);
-	const num = props.numCards;
 	return (
 		<div id="app">
-				<Board />
+				<Board numBall={props.numBall} />
 				<Status />
-				<CardContainer numCards={num} />
+				<CardContainer numCards={props.numCards} />
 				<LastCalled />
 				<button onClick={() => {
 					let random = Math.floor((Math.random()*75)+1);
