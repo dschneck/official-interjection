@@ -34,7 +34,13 @@ class Card extends React.Component {
 					<tr>{this.spwn(5, 5*100)}</tr>
 					<tr>
 						{this.spwn(2, 10 *100)}
-						<td id="free">free</td>
+						<td id="free">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							free
+						</td>
 						{this.spwn(2, 10 *100)}
 					</tr>
 					<tr>{this.spwn(5, 15*100)}</tr>
