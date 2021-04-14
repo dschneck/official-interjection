@@ -9,10 +9,10 @@ import Status from './Status.js';
 
 import {select, reset_board} from './actions/board/boardSlice.js';
 import {enqueue, dequeue} from './actions/lastCalled/lastCalledSlice.js';
+import {increment} from './actions/numBallsCalled/numBallsCalledSlice.js';
 
 function App(props) {
 	const dispatch = useDispatch();
-	const board = useSelector(state => state.board);
 	
 	return (
 		<div id="app">
@@ -22,6 +22,7 @@ function App(props) {
 				<LastCalled />
 				<button onClick={() => {
 					let random = Math.floor((Math.random()*75)+1);
+					dispatch(increment());
 					dispatch(select(random));
 					dispatch(enqueue(random));
 				}}>

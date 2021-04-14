@@ -9,7 +9,7 @@ const boardReducer = (state = {board: Array(75).fill(false)}, action) => {
 			return state;
 		case 'board/RESET':
 			state =  {
-				board: Array(75).fill(false)
+				board: Array(75).fill(false),
 			}
 			return state;
 		default:
