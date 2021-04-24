@@ -32,7 +32,7 @@
  #selected-ball {
  	background: #00b7db;
 	color: black;
-	animation: select_ball 1s;
+	animation: select_ball 1s ease-in;
 
  }
 
@@ -81,8 +81,6 @@
 	animation: move_ball_down 1s;
 }
  
- 
-
 .ball:nth-child(2) {
 	animation: move_ball_down 1s;
 }

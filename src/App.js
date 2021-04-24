@@ -11,6 +11,19 @@ import {select, reset_board} from './actions/board/boardSlice.js';
 import {enqueue, dequeue} from './actions/lastCalled/lastCalledSlice.js';
 import {increment} from './actions/numBallsCalled/numBallsCalledSlice.js';
 
+async function randomNumbers() {
+	let url = 'https://www.random.org/integers/?num=24&min=1&max=75&col=5&base=10&format=plain&rnd=new';
+
+	const response = await fetch(url);
+	const text = await response.text();
+
+	let cardNums =  new Array(25);
+
+	console.log(text);
+	console.log(text[0]);
+
+}
+
 function App(props) {
 	const dispatch = useDispatch();
 	
@@ -37,5 +50,7 @@ function App(props) {
 
 	)
 }
+
+randomNumbers();
 
 export default App;
