@@ -7,16 +7,17 @@ const lastCalledReducer = (state = {lastCalled: Array(5).fill(null)}, action) =>
 			if (ret.length > 5) {
 				ret = Array.from(ret.slice(1));
 			}
+
 			state = {
 				lastCalled: ret
 			}
+
 			return state;
 		case 'lastCalled/DEQUEUE':
 			let retx; 
 
 			if (action.payload === 5) retx =  Array(5).fill(null);
 			else retx = Array.from(state.lastCalled.slice(action.payload));	
-
 
 			state = {
 				lastCalled: retx

@@ -6,9 +6,10 @@
 
 @keyframes final_selection {
 	0% {background: var(--final-called-color); color: black; font-size: 25px}
-	50% {background: var(--not-called-color); font-size: 30px;}
-	75%  {background: var(--final-called-color); font-size: 20px;}
-	100% {background: var(--final-called-color); font-size: 30px;}
+	25% {background: var(--not-called-color); font-size: 22.5px;}
+	50% {background: var(--not-called-color); font-size: 25px;}
+	75%  {background: var(--final-called-color); font-size: 22.5px;}
+	100% {background: var(--final-called-color); font-size: 25px;}
 
 }
 
@@ -16,6 +17,7 @@
 	background-color: var(--called-color);
   	border: 1px solid #1a232f;
 	animation: fade_in_selection 2.75s ease-in;
+	animation-fill-mode: forwards;
 }
 
 
@@ -29,8 +31,8 @@
 }
 
 #final-letter {
-	animation: final_selection 2s;
-
+	animation: final_selection 4s infinite;
+	animation-fill-mode: forwards;
 }
 
 #board {
